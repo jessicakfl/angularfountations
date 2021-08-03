@@ -15,7 +15,7 @@ export class ForwardLookComponent implements OnInit {
 
   displayedColumns: string[] = ['id', 'photofilepath', 'nx'];
   dataSource: ImageObj[] = [];
-  tableTitle = 'image'
+  tableTitle = 'Summary of Component Groups - Aircraft'
   constructor(private service: CardService) {
     service.getImageList().subscribe((data: ImageObj[]) => {
       this.dataSource = data;
