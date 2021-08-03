@@ -1,0 +1,44 @@
+<div #box class="tableofimagenotes" [style.width.px]="width" [style.height.px]="height"
+    [style.transform]="'translate3d('+ left + 'px,' + top + 'px,' + '0px)'"
+    [class.active]="status === 1 || status === 2" (mousedown)="setStatus($event, 2)"
+    (window:mouseup)="setStatus($event, 0)">
+    <div class="resize-action" (mousedown)="setStatus($event, 1)"></div>
+    <!--<span>{{width | number:'1.0-0'}}px</span>
+    <span>{{height | number:'1.0-0'}}px</span>
+    <span>({{left}}, {{top}})</span>-->
+        <label class="col-sm-3 col-form-label"
+        style="background-color: skyblue; display:inline-block;width: 100%;">{{cardtitle}}</label>
+        <div *ngIf="ifnotepaging">
+        <p-table [value]="ImageNoteList" appendTo="body" [style]="{'width':'100%','overflow':'auto!important'}"
+        [responsive]="true" [rows]="5" [resizableColumns]="true" columnResizeMode="expand" [paginator]="true"
+        [rowsPerPageOptions]="[10,15,20,25]">
+        <ng-template pTemplate="header">
+            <tr style="text-align:left">
+                <th>Id</th>
+                <th>notes1</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-imagenote>
+            <tr>
+                <td>{{imagenote.id}}</td>
+                <td>{{imagenote.notes1}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+    </div>
+    <div *ngIf="!ifnotepaging">
+        <p-table [value]="ImageNoteList" appendTo="body" [style]="{'width':'100%','overflow':'auto!important'}">
+        <ng-template pTemplate="header">
+            <tr style="text-align:left">
+                <th>Id</th>
+                <th>Notes2</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-imagenote>
+            <tr>
+                <td>{{imagenote.id}}</td>
+                <td>{{imagenote.notes1}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+    </div>

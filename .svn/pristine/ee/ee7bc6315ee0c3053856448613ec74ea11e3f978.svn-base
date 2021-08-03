@@ -1,0 +1,28 @@
+<div #box class="tableofcard" 
+    [style.width.px]="width" 
+    [style.height.px]="height" 
+    [style.transform]="'translate3d('+ left + 'px,' + top + 'px,' + '0px)'"
+    [class.active]="status === 1 || status === 2"
+    (mousedown)="setStatus($event, 2)"
+    (window:mouseup)="setStatus($event, 0)"
+>
+    <div class="resize-action" (mousedown)="setStatus($event, 1)"></div>
+    <!--<span>{{width | number:'1.0-0'}}px</span>
+    <span>{{height | number:'1.0-0'}}px</span>
+    <span>({{left}}, {{top}})</span>-->
+    <label class="col-sm-3 col-form-label" style="background-color:#d8d8fc; display:inline-block;width: 100%;">{{cardtitle}}</label>
+    <p-table [value]="cards"  style="border-spacing: 5px 10px;">
+ -->
+        <ng-template pTemplate="body" let-card>
+                <tr><td>{{card.name}}</td><td></td></tr>
+                    <tr>
+                <td><input style="background-color: #d8d8fc;" type ="text"/> </td>
+                <td></td>
+                <td>Go-></td>
+                </tr>
+                <!-- </div> -->
+                <!-- <td>{{card.origin}}</td>
+                <td>{{card.destination}}</td> -->
+        </ng-template>
+    </p-table>
+</div>

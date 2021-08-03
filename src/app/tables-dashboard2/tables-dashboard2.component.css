@@ -121,9 +121,9 @@
 
 
 
-  /**********************
-  ** style for table: 
-  ***********************/
+/**********************
+** style for table: 
+***********************/
 
 table, th, td {
     /* border: 1px solid black; */
@@ -141,9 +141,9 @@ td {
 }
 
 
-  /**********************
-  ** style for mat-table: 
-  ***********************/
+/**********************
+** style for mat-table: 
+***********************/
 
 
 
@@ -172,19 +172,17 @@ td {
   tr {
     font-size: 12px!important;
   }
-  /* initial color: */
-  /* tr:nth-child(even) {background-color: #f2f2f2;} */
+
+  /* Table row: background-color of every even row: */
+
   tr:nth-child(even) {background-color: #FFF8DC;}
-  /* tr:nth-child(odd) {background-color: #FFF1B7;} */
 
   .mat-header-cell,  .mat-header-row {
     font-size: 13px;
     height:2em;
     min-width: 1rem;
   }
-
   
-  /* th.mat-header-cell, td.mat-cell, */
   .mat-header-cell {
     display:table-cell;
     padding:0;
@@ -192,7 +190,8 @@ td {
     color:rgba(0, 0, 0, 0.87)
   }
 
-  .mat-row{
+  /* Table row background-color */
+  .mat-row {
     background-color: #FFF1B7;
   }
 
@@ -217,8 +216,10 @@ td {
     align-items:flex-start;
   }
 
-  /* table caption { */
-    caption.myTitleCaption {
+
+  /* Custom Style for Table Caption(s) */
+
+  caption.myTitleCaption {
     caption-side: top;
     background-color:rgb(190, 190, 250);
     /* padding:0.8ex; */
@@ -269,60 +270,25 @@ td {
   }
 
 
-/* .mat-column-qty{ */
+/* Custom Style for column "Qty" */
+
 .mat-column-Qty {
     text-align: right;
 }
 
 
-/* Style for icon "close" */
-#toolbar-table-title1 {
-    display: unset;
-    vertical-align: inherit;
-}
-#toolbar-row-table-title1{
-    padding:0;
-    display: contents;
-    background-color:rgb(190, 190, 250);
-    /* position: fixed; */
-    /* float: right; */
-    text-align: top;
-}
-#icon-close-table-title1{
-    background-repeat: no-repeat;
-    /* display: inline-block; */
-    fill: currentColor;
-    height: 12px;
-    width: 12px;
-    font-size: 14px;
-    font-weight: 700;
-    /* justify-content: flex-end; */
-    padding-top: 5px;
-    size:10px; 
-    float: right;
-    color:red;
-}
+/* Style for icon "close" in Delete Box */
 
-.icon-close-table2 {
+.icon-close-tab-red {
   background-repeat: no-repeat;
-    /* display: inline-block; */
-    fill: currentColor;
-    height: 12px;
-    width: 12px;
-    font-size: 14px !important;
-    font-weight: 700;
-    /* justify-content: flex-end; */
-    /* padding-top: 5px; */
-    size:10px; 
-    float: right;
-    color:red;
-    /* position: absolute;
-  left: 100%;
-  top: 100%;
-  transform: translate3d(-50%, -50%, 0) rotateZ(45deg);
-  border-style: solid;
-  border-width: 8px;
-  border-color: transparent transparent transparent orange; */
+  fill: currentColor;
+  height: 12px;
+  width: 12px;
+  font-size: 14px !important;
+  font-weight: 700;
+  size:10px; 
+  float: right;
+  color:red;
 }
 
 
