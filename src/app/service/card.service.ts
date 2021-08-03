@@ -42,6 +42,7 @@ export class CardService {
     { "tall": "890021 801067", "moun":"cutboard pylon", "date":"04-08-07", "adt":"14-aug-08", "prj":"14-jan-08"},
     { "tall": "890021 801067", "moun":"pylo:ned", "date":"04-08-07", "adt":"14-aug-08", "prj":"14-jan-08"},
   ];
+  
   private width: number;
 
   public getCards(): Card[] {

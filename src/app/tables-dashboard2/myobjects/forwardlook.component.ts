@@ -1,30 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-
-export interface ForwardLook {
-  ForwardLook: string;
-  Qty: number;
-  id:number;
+import { AfterViewInit, Component, Injectable, OnInit } from '@angular/core';
+import { CardService } from 'src/app/service/card.service';
+import { Image } from 'src/app/model/image';
+export interface ImageObj {
+  fileimagepath: string;
+  id: number;
+  nx:number
 }
-
-const FORWARDLOOK_DATA: ForwardLook[] = [
-  {ForwardLook: 'Operations Opening in 10 days:', Qty: 0, id: 1},
-  {ForwardLook: 'Operations Opening in 30 days:', Qty: 0, id: 2},
-]
-
 
 @Component({
   template: '',
 })
 
-
 export class ForwardLookComponent implements OnInit {
 
-  displayedColumns: string[] = ['ForwardLook', 'Qty', 'id'];
-  dataSource = FORWARDLOOK_DATA;
-  tableTitle = 'Forward Look'
+  displayedColumns: string[] = ['id', 'photofilepath', 'nx'];
+  dataSource: ImageObj[] = [];
+  tableTitle = 'image'
+  constructor(private service: CardService) {
+    service.getImageList().subscribe((data: ImageObj[]) => {
+      this.dataSource = data;
+    })
+  }
 
-  constructor() { }
-
-  ngOnInit(): void {  }
-  
+  ngOnInit(): void {
+  }
 }
