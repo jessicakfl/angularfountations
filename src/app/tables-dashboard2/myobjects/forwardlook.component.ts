@@ -1,10 +1,11 @@
 import { AfterViewInit, Component, Injectable, OnInit } from '@angular/core';
+import { NumberValueAccessor } from '@angular/forms';
 import { CardService } from 'src/app/service/card.service';
-import { Image } from 'src/app/model/image';
 export interface ImageObj {
-  fileimagepath: string;
+  name: string;
   id: number;
-  nx:number
+  nx:Number;
+  ny;
 }
 
 @Component({
@@ -13,12 +14,12 @@ export interface ImageObj {
 
 export class ForwardLookComponent implements OnInit {
 
-  displayedColumns: string[] = ['id', 'photofilepath', 'nx'];
+  displayedColumns: string[] = ['id', 'name', 'nx', 'ny'];
   dataSource: ImageObj[] = [];
   tableTitle = 'Summary of Component Groups - Aircraft'
   constructor(private service: CardService) {
     service.getImageList().subscribe((data: ImageObj[]) => {
-      this.dataSource = data;
+      this.dataSource = data.reverse();
     })
   }
 
