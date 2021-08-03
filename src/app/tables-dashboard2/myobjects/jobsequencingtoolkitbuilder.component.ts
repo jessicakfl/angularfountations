@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-
-export interface JobSequencingToolKitBuilder {
+import { Group } from 'src/app/model/group';
+import { CardService } from 'src/app/service/card.service';
+export interface GroupObj {
   JobSequencingToolKitBuilder: string;
 }
 
-const TABLE_DATA: JobSequencingToolKitBuilder[] = [
-  {JobSequencingToolKitBuilder: 'JST Kit Builder - Material to Kit'},
-  {JobSequencingToolKitBuilder: 'JST Kit Builder - All Material'},
-]
+// const TABLE_DATA: JobSequencingToolKitBuilder[] = [
+//   {JobSequencingToolKitBuilder: 'JST Kit Builder - Material to Kit'},
+//   {JobSequencingToolKitBuilder: 'JST Kit Builder - All Material'},
+// ]
 
 @Component({
   template: '',
@@ -16,11 +17,13 @@ const TABLE_DATA: JobSequencingToolKitBuilder[] = [
 
 export class JobSequencingToolKitBuilderComponent implements OnInit {
 
-  displayedColumns: string[] = ['JobSequencingToolKitBuilder'];
-  dataSource = TABLE_DATA;
-  tableTitle = 'Job Sequencing Tool - Kit Builder'
+  displayedColumns: string[] = ['name', 'complete', 'late', 'ontime', 'latep'];
+  dataSource: Group[] = [];
+  tableTitle = 'Compeleted Components'
 
-  constructor() { }
+  constructor(private service: CardService) {
+    this.dataSource = this.service.getGroups();
+  }
 
   ngOnInit(): void {  }
   

@@ -33,8 +33,8 @@ export class TablesDashboard2Component implements OnInit {
     console.log("Here is table_Backorders:");
     console.log(table_Backorders);
 
-    var table_BillOfWorkManagement = new BillOfWorkManagementComponent();
-    var table_JobSequencingToolKitBuilder = new JobSequencingToolKitBuilderComponent();
+    var table_BillOfWorkManagement = new BillOfWorkManagementComponent(this.service);
+    var table_JobSequencingToolKitBuilder = new JobSequencingToolKitBuilderComponent(this.service);
     var table_FOM = new FomComponent();
     var table_CmxgSupport = new CmxgSupportComponent();
     var table_PartTracking = new PartTrackingComponent();
