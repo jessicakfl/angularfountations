@@ -302,3 +302,43 @@ td {
   border-width: 8px;
   border-color: transparent transparent transparent orange;
 }
+
+
+/* Style for collapsable (expansion) panel */
+
+.collapsable-panel-box {
+  margin: 0.0em; 
+  width: inherit; 
+}
+
+.mat-expansion-panel {
+  background-color: #FFF8DC;
+  border-radius: 0 !important;
+}
+
+.mat-expansion-panel-header {
+  background-color:#ee9139 !important;
+  border-radius: 0;
+  height: 1.0em !important;
+}
+
+.mat-expansion-panel-header-title {
+  font-size:13px;
+  margin-left: 16px;
+  padding-top:5px;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mat-expansion-panel-header {
+  padding: 0em .7em 0.2em 0em;
+  height: 1.5em;
+}

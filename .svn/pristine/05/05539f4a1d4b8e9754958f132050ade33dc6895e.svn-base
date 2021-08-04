@@ -1,28 +1,5 @@
 <!-- <p>tables-dashboard2 works!</p> -->
 
-<div class="collapsable-panel-box">
-  <mat-accordion class="example-headers-align" multi>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Available Modules:
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>     
-      
-      <div style="width: 250px; height: 40px; margin: 20px; background-color: gainsboro;">  
-      </div>
-      <div style="width: 250px; height: 40px; margin: 20px; background-color: gainsboro;">  
-      </div>
-      <div style="width: 250px; height: 40px; margin: 20px; background-color: gainsboro;">  
-      </div>
-      
-    </mat-expansion-panel>
-  </mat-accordion>
-</div>
-
-
 <table id="tables-dashboard2">
   <tbody>
     <tr cdkDropListGroup style="width:100%">
