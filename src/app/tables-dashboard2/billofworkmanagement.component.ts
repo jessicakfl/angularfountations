@@ -25,7 +25,7 @@ export class BillOfWorkManagementComponent implements OnInit {
 
   displayedColumns: string[] = ['name'];
   dataSource: Card[] = [];
-  tableTitle = 'Search Avg"'
+  tableTitle = 'Search Avg'
 
   constructor(private service: CardService) {
     this.dataSource = this.service.getCards();

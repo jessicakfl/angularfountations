@@ -8,11 +8,15 @@ import { RecursiveTemplateAstVisitor } from '@angular/compiler';
   providedIn: 'root'
 })
 export class CardService {
-  readonly ApiUrl = "https://localhost:5001/api/image/";
-  readonly ApiNoteUrl = "https://localhost:5001/api/imagenote/";
-  readonly ApiDirectionUrl = "https://localhost:5001/api/imagedirection/";
-  readonly ApiUrlConfigSettings = "https://localhost:5001/api/configsettings/";
-  readonly ImageUrl = "https://localhost:5001/photos/";
+  // readonly ApiUrl = "https://localhost:5001/api/image/";
+  readonly ApiUrl = "http://localhost:8080/api/images/";
+  // readonly ApiNoteUrl = "https://localhost:5001/api/imagenote/";
+  // readonly ApiDirectionUrl = "https://localhost:5001/api/imagedirection/";
+  readonly ApiNoteUrl = "http://localhost:8080/api/imagenotes/";
+  readonly ApiDirectionUrl = "http://localhost:8080/api/imagedirections/";
+  // readonly ApiUrlConfigSettings = "https://localhost:5001/api/configsettings/";
+  readonly ApiUrlConfigSettings = "http://localhost:8080/api/configsettings/";
+  // readonly ImageUrl = "https://localhost:5001/photos/";
   constructor(private http: HttpClient) { }
 
   private cards: Card[] = [
@@ -90,7 +94,7 @@ export class CardService {
   }
 
   getImageDirectionssByImageId(val: any): Observable<any[]> {
-    return this.http.get<any>(this.ApiDirectionUrl + 'getImageDirectionssByImageId/' + val);
+    return this.http.get<any>(this.ApiDirectionUrl + 'getImageDirectionsByImageId/' + val);
   }
   getImageByImageId(val: any): Observable<any[]> {
     return this.http.get<any>(this.ApiUrl + 'getImageById/' + val);
