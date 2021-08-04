@@ -5,7 +5,7 @@ export interface ImageObj {
   name: string;
   id: number;
   nx:Number;
-  ny;
+  ny:Number;
 }
 
 @Component({
