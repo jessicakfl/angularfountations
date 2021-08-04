@@ -39,7 +39,7 @@
                 matColumnDef="{{disCol}}">
                 <mat-header-cell *matHeaderCellDef>{{disCol}}</mat-header-cell>
                 <mat-cell *matCellDef="let element">
-                  <a [routerLink]="['subtables', element.id]">
+                  <a [routerLink]="['/table/subtables', element.id]">
                     {{element[disCol]}}</a>
                 </mat-cell>
               </ng-container>
