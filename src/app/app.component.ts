@@ -11,7 +11,7 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
 export class AppComponent {
     items: MenuItem[];
     tabitems: MenuItem[];
-    title = 'EMIS';
+    title = 'PDMSS';
     constructor() { }
     firstColumn = [
         'Get to work',
@@ -45,7 +45,7 @@ export class AppComponent {
     ngOnInit(): void {
         this.items = [
             {
-                label: 'EMIS',
+                label: 'PDMSS',
                 'routerLink': ['table'],
                 items: [{
                     label: 'New',
