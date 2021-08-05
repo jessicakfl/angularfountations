@@ -2,7 +2,7 @@
 
 <div class="collapsable-panel-box">
   <mat-accordion class="example-headers-align" multi>
-    <mat-expansion-panel>
+    <mat-expansion-panel >
       <mat-expansion-panel-header>
         <mat-panel-title>
           Available Modules:
@@ -10,14 +10,33 @@
         <mat-panel-description>
         </mat-panel-description>
       </mat-expansion-panel-header>     
-      
-      <div style="width: 250px; height: 40px; margin: 20px; background-color: gainsboro;">  
-      </div>
-      <div style="width: 250px; height: 40px; margin: 20px; background-color: gainsboro;">  
-      </div>
-      <div style="width: 250px; height: 40px; margin: 20px; background-color: gainsboro;">  
-      </div>
-      
+      <ul class="inline-list-of-modules" >
+        <li *ngFor="let module of listOfModules" style="display: inline-block;">
+          
+          <div *ngIf="module.canBeAdded" style="width: 250px; height: 40px; margin: 20px; background-color: gainsboro;">
+            <div style="display: table-column; float:left;">
+              <form>
+                <output style="font-size:13px;padding-left:5px;">{{module.tableTitle}}</output><br>
+                <output style="font-size:11px;padding-left:5px;">{{module.avgLoad}}</output>
+              </form>
+            </div>
+            <div style="display: table-column; float:right;">
+              <button *ngIf="module.canBeAdded" matSuffix mat-icon-button aria-label="" (click)="addTable(module.modId)" style="color: green;background-color: gainsboro;">
+                <mat-icon>add</mat-icon>
+              </button>
+            </div>
+          </div>
+          <div *ngIf="!module.canBeAdded" style="width: 250px; height: 40px; margin: 20px; background-color: #fccfd7;">
+            <div style="display: table-column; float:left;">
+              <form>
+                <output style="font-size:13px;padding-left:5px;">{{module.tableTitle}}</output><br>
+                <output style="font-size:11px;padding-left:5px;">{{module.avgLoad}}</output>
+              </form>
+            </div>
+          </div>
+
+        </li>
+      </ul>
     </mat-expansion-panel>
   </mat-accordion>
 </div>

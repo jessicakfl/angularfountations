@@ -1,0 +1,20 @@
+# angularfountation
+
+features, menus, resize and move
+
+# basic structure
+
+/model, jsons
+/service, shared serivces
+/tables, add new table components for new type
+/tables/subtables, subtypes
+table.component, specify width, height, top and left on the grid
+
+
+# versions and addons
+
+angular 11
+primeng
+
+# created
+
