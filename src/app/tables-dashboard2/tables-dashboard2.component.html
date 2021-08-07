@@ -81,7 +81,9 @@
               <ng-container *ngFor="let disCol of item.displayedColumns; let colIndex = index"
                 matColumnDef="{{disCol}}">
                 <mat-header-cell *matHeaderCellDef>{{disCol}}</mat-header-cell>
-                <mat-cell *matCellDef="let element"> {{element[disCol]}}
+                <mat-cell *matCellDef="let element"> <a [routerLink]="['/table/subtables', element.id]">
+                  {{element[disCol]}}
+                  </a>
                 </mat-cell>
               </ng-container>
               <tr mat-header-row *matHeaderRowDef="item.displayedColumns" [style.display]="'none'"></tr>
@@ -103,7 +105,10 @@
               <ng-container *ngFor="let disCol of item.displayedColumns; let colIndex = index"
                 matColumnDef="{{disCol}}">
                 <mat-header-cell *matHeaderCellDef>{{disCol}}</mat-header-cell>
-                <mat-cell *matCellDef="let element"> {{element[disCol]}}
+                <mat-cell *matCellDef="let element"> 
+                  <a [routerLink]="['/table/subtables', element.id]">
+                  {{element[disCol]}}
+                  </a>
                 </mat-cell>
               </ng-container>
               <tr mat-header-row *matHeaderRowDef="item.displayedColumns" [style.display]="'none'"></tr>
