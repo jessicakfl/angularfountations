@@ -13,35 +13,7 @@ export class AppComponent {
     tabitems: MenuItem[];
     title = 'PDMSS';
     constructor() { }
-    firstColumn = [
-        'Get to work',
-        'Go home'
-      ];
-    
-      secondColumn = [
-        'Get up',
-        'Brush teeth',
-        'Take a shower'
-      ];
-    
-      thirdColumn = [
-        'Check e-mail',
-        'Pick up groceries',
-        'Walk dog',
-        'Watch TV',
-        'Work',
-        'Fall asleep'
-      ];
-      drop(event: CdkDragDrop<string[]>) {
-        if (event.previousContainer === event.container) {
-          moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
-        } else {
-          transferArrayItem(event.previousContainer.data,
-                            event.container.data,
-                            event.previousIndex,
-                            event.currentIndex);
-        }
-      }
+
     ngOnInit(): void {
         this.items = [
             {
@@ -74,7 +46,7 @@ export class AppComponent {
             },
             {
                 label: 'IT Application',
-                icon: 'pi pi-fw pi-plus',
+                icon: 'pi pi-fw pi-file',
             },
             {
                 label: 'AF System',
