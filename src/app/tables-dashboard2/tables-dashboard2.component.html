@@ -2,17 +2,17 @@
 
 <div class="collapsable-panel-box">
   <mat-accordion class="example-headers-align" multi>
-    <mat-expansion-panel >
+    <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
           Available Modules:
         </mat-panel-title>
         <mat-panel-description>
         </mat-panel-description>
-      </mat-expansion-panel-header>     
-      <ul class="inline-list-of-modules" >
+      </mat-expansion-panel-header>
+      <ul class="inline-list-of-modules">
         <li *ngFor="let module of listOfModules" style="display: inline-block;">
-          
+
           <div *ngIf="module.canBeAdded" style="width: 250px; height: 40px; margin: 20px; background-color: gainsboro;">
             <div style="display: table-column; float:left;">
               <form>
@@ -21,7 +21,8 @@
               </form>
             </div>
             <div style="display: table-column; float:right;">
-              <button *ngIf="module.canBeAdded" matSuffix mat-icon-button aria-label="" (click)="addTable(module.modId)" style="color: green;background-color: gainsboro;">
+              <button *ngIf="module.canBeAdded" matSuffix mat-icon-button aria-label="" (click)="addTable(module.modId)"
+                style="color: green;background-color: gainsboro;">
                 <mat-icon>add</mat-icon>
               </button>
             </div>
@@ -82,7 +83,7 @@
                 matColumnDef="{{disCol}}">
                 <mat-header-cell *matHeaderCellDef>{{disCol}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> <a [routerLink]="['/table/subtables', element.id]">
-                  {{element[disCol]}}
+                    {{element[disCol]}}
                   </a>
                 </mat-cell>
               </ng-container>
@@ -105,9 +106,9 @@
               <ng-container *ngFor="let disCol of item.displayedColumns; let colIndex = index"
                 matColumnDef="{{disCol}}">
                 <mat-header-cell *matHeaderCellDef>{{disCol}}</mat-header-cell>
-                <mat-cell *matCellDef="let element"> 
+                <mat-cell *matCellDef="let element">
                   <a [routerLink]="['/table/subtables', element.id]">
-                  {{element[disCol]}}
+                    {{element[disCol]}}
                   </a>
                 </mat-cell>
               </ng-container>
