@@ -196,7 +196,7 @@ td {
   }
 
   .mat-header-row {
-    background-color:rgb(190, 190, 250);
+    background-color:#d8d8fc;
     /* initial color: */
     /* background-color:lightsteelblue; */
   }
@@ -342,3 +342,7 @@ td {
   padding: 0em .7em 0.2em 0em;
   height: 1.5em;
 }
+
+/* .mat-cell, .mat-header-cell {
+text-emphasis-color: green;
+} */
