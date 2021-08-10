@@ -189,7 +189,7 @@ tr:nth-child(even) {
   }
 
   .mat-header-row {
-    background-color:rgb(190, 190, 250);
+    background-color:#d8d8fc;
     /* initial color: */
     /* background-color:lightsteelblue; */
   }
@@ -334,6 +334,7 @@ tr:nth-child(even) {
   align-items: center;
 }
 
+<<<<<<< HEAD
 /* inline list of modules: */
 .collapsable-panel-box ul {
   padding-inline-start: 0px;
@@ -385,3 +386,13 @@ tr:nth-child(even) {
   margin: 10px;
   background-color: #fccfd7;
 }
+=======
+.mat-expansion-panel-header {
+  padding: 0em .7em 0.2em 0em;
+  height: 1.5em;
+}
+
+/* .mat-cell, .mat-header-cell {
+text-emphasis-color: green;
+} */
+>>>>>>> 9210566d5beec0329ced9206f1bfd65a89678215
