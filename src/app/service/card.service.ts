@@ -94,7 +94,7 @@ export class CardService {
   }
 
   getImageDirectionssByImageId(val: any): Observable<any[]> {
-    return this.http.get<any>(this.ApiDirectionUrl + 'imageDirections/' + val);
+    return this.http.get<any>(this.ApiDirectionUrl + val);
   }
   getImageByImageId(val: any): Observable<any[]> {
     return this.http.get<any>(this.ApiUrl + 'getImageById/' + val);
