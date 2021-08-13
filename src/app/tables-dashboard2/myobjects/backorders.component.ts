@@ -22,6 +22,7 @@ export class BackordersComponent implements OnInit {
   dataSource = BACKORDERS_DATA;
   tableTitle = 'Backorders'
   tableFooter1 = 'Backorders'
+  avgLoadTime = 0.22;
 
   constructor() { }
 

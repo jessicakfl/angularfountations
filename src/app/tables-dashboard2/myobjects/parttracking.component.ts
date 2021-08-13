@@ -29,7 +29,7 @@ export class PartTrackingComponent implements OnInit {
   dataSource = TABLE_DATA;
   tableTitle = 'Part Tracking'
   tableFooter3 = 'Total'
-
+  avgLoadTime = 0.05;
   constructor() { }
 
   ngOnInit(): void {  }

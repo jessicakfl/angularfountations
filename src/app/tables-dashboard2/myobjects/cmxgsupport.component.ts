@@ -23,6 +23,7 @@ export class CmxgSupportComponent implements OnInit {
   tableTitle = 'CMXG Support'
   tableFooter1 = 'Completed'
   tableFooter2 = 'Awaiting CMXG Receipt'
+  avgLoadTime = 0.15;
 
   constructor() { }
 

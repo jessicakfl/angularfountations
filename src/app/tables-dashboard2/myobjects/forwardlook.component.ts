@@ -17,6 +17,7 @@ export class ForwardLookComponent implements OnInit {
   displayedColumns: string[] = ['id', 'name', 'nx', 'ny'];
   dataSource: ImageObj[] = [];
   tableTitle = 'Summary of Component Groups - Aircraft'
+  avgLoadTime = 0.58;
   constructor(private service: CardService) {
     service.getImageList().subscribe((data: ImageObj[]) => {
       this.dataSource = data.reverse();

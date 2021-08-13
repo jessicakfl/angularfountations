@@ -24,7 +24,8 @@ export class FomComponent implements OnInit {
   dataSource = TABLE_DATA;
   tableTitle = 'FOM'
   tableFooter1 = 'FOM Search'
-
+  avgLoadTime = 0.25;
+  
   constructor() { }
 
   ngOnInit(): void {  }

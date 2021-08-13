@@ -52,7 +52,7 @@
           <div class="example-box" *ngFor="let item of firstColumn" cdkDrag>
             <table mat-table *ngIf="item.dataSource" [dataSource]="item.dataSource" class="mat-elevation-z8">
               <caption class="myTitleCaption">{{item.tableTitle}}
-                <output style="float:right;font-size:12px;">Avg: {{item.avgLoadTime}} sec</output>
+                <output style="font-weight:lighter;float:right;font-size:12px;">Avg: 0.25 sec</output>
               </caption>
               <caption class="myFooter1Caption" *ngIf="item.tableFooter1">{{item.tableFooter1}}</caption>
               <ng-container *ngFor="let disCol of item.displayedColumns; let colIndex = index"
@@ -78,7 +78,7 @@
           <div class="example-box" *ngFor="let item of secondColumn" cdkDrag>
             <table mat-table *ngIf="item.dataSource" [dataSource]="item.dataSource" class="mat-elevation-z8">
               <caption class="myTitleCaption">{{item.tableTitle}}
-                <output style="float:right;font-size:12px;">Avg: {{item.avgLoadTime}} sec</output>
+                <output style="font-weight:lighter;float:right;font-size:12px;">Avg: 0.25 sec</output>
               </caption>
               <caption class="myFooter1Caption" *ngIf="item.tableFooter1">{{item.tableFooter1}}</caption>
               <ng-container *ngFor="let disCol of item.displayedColumns; let colIndex = index"
@@ -104,7 +104,7 @@
           <div class="example-box" *ngFor="let item of thirdColumn" cdkDrag>
             <table mat-table *ngIf="item.dataSource" [dataSource]="item.dataSource" class="mat-elevation-z8">
               <caption class="myTitleCaption">{{item.tableTitle}}
-                <output style="float:right;font-size:12px;">Avg: {{item.avgLoadTime}} sec</output>
+                <output style="font-weight:lighter;float:right;font-size:12px;">Avg: 0.25 sec</output>
               </caption>
               <caption class="myFooter1Caption" *ngIf="item.tableFooter1">{{item.tableFooter1}}</caption>
               <ng-container *ngFor="let disCol of item.displayedColumns; let colIndex = index"

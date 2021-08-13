@@ -20,7 +20,7 @@ export class JobSequencingToolKitBuilderComponent implements OnInit {
   displayedColumns: string[] = ['name', 'complete', 'late', 'ontime', 'latep'];
   dataSource: Group[] = [];
   tableTitle = 'Compeleted Components'
-
+  avgLoadTime = 0.66;
   constructor(private service: CardService) {
     this.dataSource = this.service.getGroups();
   }

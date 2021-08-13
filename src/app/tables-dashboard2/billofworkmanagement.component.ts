@@ -26,7 +26,7 @@ export class BillOfWorkManagementComponent implements OnInit {
   displayedColumns: string[] = ['name'];
   dataSource: Card[] = [];
   tableTitle = 'Search Avg'
-
+  avgLoadTime = 0.02;
   constructor(private service: CardService) {
     this.dataSource = this.service.getCards();
   }
