@@ -172,7 +172,7 @@ tr:nth-child(even) {
 
   .mat-header-cell,  .mat-header-row {
     font-size: 13px;
-    height:1.5em;
+    height:2em;
     min-width: 1rem;
   }
   
@@ -189,7 +189,7 @@ tr:nth-child(even) {
   }
 
   .mat-header-row {
-    background-color:#D8D8FC;
+    background-color:#d8d8fc;
     /* initial color: */
     /* background-color:lightsteelblue; */
   }
@@ -384,4 +384,8 @@ tr:nth-child(even) {
   border-radius: 4px;
   margin: 10px;
   background-color: #fccfd7;
+}
+.mat-expansion-panel-header {
+  padding: 0em .7em 0.2em 0em;
+  height: 1.5em;
 }
