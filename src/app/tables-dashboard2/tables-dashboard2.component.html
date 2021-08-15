@@ -51,7 +51,9 @@
         <div cdkDropList [cdkDropListData]="firstColumn" class="example-list" (cdkDropListDropped)="drop($event)">
           <div class="example-box" *ngFor="let item of firstColumn" cdkDrag>
             <table mat-table *ngIf="item.dataSource" [dataSource]="item.dataSource" class="mat-elevation-z8">
-              <caption class="myTitleCaption">{{item.tableTitle}}</caption>
+              <caption class="myTitleCaption">{{item.tableTitle}}
+                <output style="float:right;font-size:12px;">Avg: {{item.avgLoadTime}} sec</output>
+              </caption>
               <caption class="myFooter1Caption" *ngIf="item.tableFooter1">{{item.tableFooter1}}</caption>
               <ng-container *ngFor="let disCol of item.displayedColumns; let colIndex = index"
                 matColumnDef="{{disCol}}">
@@ -75,7 +77,9 @@
         <div cdkDropList [cdkDropListData]="secondColumn" class="example-list" (cdkDropListDropped)="drop($event)">
           <div class="example-box" *ngFor="let item of secondColumn" cdkDrag>
             <table mat-table *ngIf="item.dataSource" [dataSource]="item.dataSource" class="mat-elevation-z8">
-              <caption class="myTitleCaption">{{item.tableTitle}}</caption>
+              <caption class="myTitleCaption">{{item.tableTitle}}
+                <output style="float:right;font-size:12px;">Avg: {{item.avgLoadTime}} sec</output>
+              </caption>
               <caption class="myFooter1Caption" *ngIf="item.tableFooter1">{{item.tableFooter1}}</caption>
               <ng-container *ngFor="let disCol of item.displayedColumns; let colIndex = index"
                 matColumnDef="{{disCol}}">
@@ -99,7 +103,9 @@
         <div cdkDropList [cdkDropListData]="thirdColumn" class="example-list" (cdkDropListDropped)="drop($event)">
           <div class="example-box" *ngFor="let item of thirdColumn" cdkDrag>
             <table mat-table *ngIf="item.dataSource" [dataSource]="item.dataSource" class="mat-elevation-z8">
-              <caption class="myTitleCaption">{{item.tableTitle}}</caption>
+              <caption class="myTitleCaption">{{item.tableTitle}}
+                <output style="float:right;font-size:12px;">Avg: {{item.avgLoadTime}} sec</output>
+              </caption>
               <caption class="myFooter1Caption" *ngIf="item.tableFooter1">{{item.tableFooter1}}</caption>
               <ng-container *ngFor="let disCol of item.displayedColumns; let colIndex = index"
                 matColumnDef="{{disCol}}">
