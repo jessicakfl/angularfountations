@@ -120,23 +120,12 @@
 }
 
 
-/**********************
-** style for table: 
-***********************/
-
-table, th, td {
-    /* border: 1px solid black; */
-    background-color: gainsboro;
-    border: 1px solid gainsboro;
-    /* border: 1px solid white; */
-}
 table {
     width: 100%;
 }
 
 td {
     vertical-align: top;
-    background-color: gainsboro;
 }
 
 th {
