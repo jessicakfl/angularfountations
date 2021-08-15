@@ -30,7 +30,7 @@ export class ImagedirectionsComponent implements OnInit {
   public mouse: { x: number, y: number }
   public status: Status = Status.OFF;
   private mouseClick: { x: number, y: number, left: number, top: number }
-  ImageDirectionList: Imagedirection = [];
+  ImageDirectionList: any = [];
   msg: string = "";
   sub: any;
   id: any;
