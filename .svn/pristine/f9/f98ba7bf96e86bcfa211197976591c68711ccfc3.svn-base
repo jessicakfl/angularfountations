@@ -5,7 +5,7 @@ html, body {
 }
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-y: scroll;
-    // overflow-x: hidden;
+    font-family: "Arial", 10pt;
+    overflow-y:scroll;
+    // overflow-x:hidden;
 }
