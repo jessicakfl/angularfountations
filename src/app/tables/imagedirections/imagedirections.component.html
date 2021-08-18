@@ -10,7 +10,7 @@
         style="background-color: green; display:inline-block;width: 100%;">{{cardtitle}}</label>
     <div *ngIf="ifdiretionpaging">
         <p-table [value]="ImageDirectionList" appendTo="body" [style]="{'width':'100%','overflow':'auto!important'}"
-        [responsive]="true" [rows]="5" [resizableColumns]="true" columnResizeMode="expand" [paginator]="true"
+        [responsive]="true" [rows]="3" [resizableColumns]="true" columnResizeMode="expand" [paginator]="true"
         [rowsPerPageOptions]="[10,15,20,25]">
             <ng-template pTemplate="header">
                 <tr style="text-align:left">

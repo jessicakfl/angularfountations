@@ -37,6 +37,7 @@ export class ImagedirectionsComponent implements OnInit {
   ngOnInit(): void {
     this.cardtitle = "Image Directions";
     this.refreshImageDirectionsList();
+    this.ifdiretionpaging=true;
     // this.cardService.getIfImagePaging(5).subscribe((data: boolean) => {
     //   this.ifdiretionpaging = data;
     // })
