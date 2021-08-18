@@ -71,3 +71,7 @@
         background-color: green;
     }
 }
+::ng-deep .menucus li {
+    display: inline-block;
+    margin-right:8px;
+}
