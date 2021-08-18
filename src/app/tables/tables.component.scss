@@ -50,6 +50,10 @@
         background-color: green;
     }
 }
+::ng-deep .menucusbar li {
+    display: inline-block;
+    margin-right:8px;
+}
 ::ng-deep .menucus{
     background-color: #d8d8fc !important;
     display:inline-block;
