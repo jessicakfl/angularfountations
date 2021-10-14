@@ -7,8 +7,8 @@ import { SiteadminComponent } from './siteadmin/siteadmin.component';
 import { SubtablesComponent } from './tables/subtables/subtables.component';
 
 import { TablesDashboard2Component } from './tables/tables-dashboard/tables-dashboard.component';
-import { ImagedirectionsComponent } from './tables/imagedirections/imagedirections.component';
-import { ImagenotesComponent } from './tables/imagenotes/imagenotes.component';
+import { ImagedirectionsComponent } from './tables/subtables/imagedirections/imagedirections.component';
+import { ImagenotesComponent } from './tables/subtables/imagenotes/imagenotes.component';
 const routes: Routes = [
   {path:'help', component: HelpComponent},
   {path:'table', component:TablesComponent},

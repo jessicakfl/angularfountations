@@ -12,9 +12,9 @@ import { MaterialModule } from './material/material.module';
 import { TablesDashboard2Component } from './tables/tables-dashboard/tables-dashboard.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ImagedirectionsComponent } from './tables/imagedirections/imagedirections.component';
-import { ImagenotesComponent } from './tables/imagenotes/imagenotes.component';
-import { TableofcardsComponent } from './tables/tableofcards/tableofcards.component';
+import { ImagedirectionsComponent } from './tables/subtables/imagedirections/imagedirections.component';
+import { ImagenotesComponent } from './tables/subtables/imagenotes/imagenotes.component';
+import { TableofcardsComponent } from './tables/subtables/tableofcards/tableofcards.component';
 import { SubtablesComponent } from './tables/subtables/subtables.component';
 
 @NgModule({
