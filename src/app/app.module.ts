@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { TablesComponent } from './tables/tables.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './material/material.module';
-import { TablesDashboard2Component } from './tables-dashboard2/tables-dashboard2.component';
+import { TablesDashboard2Component } from './tables/tables-dashboard/tables-dashboard.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImagedirectionsComponent } from './tables/imagedirections/imagedirections.component';

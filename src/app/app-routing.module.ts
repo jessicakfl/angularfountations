@@ -6,7 +6,7 @@ import { TablesComponent } from './tables/tables.component';
 import { SiteadminComponent } from './siteadmin/siteadmin.component';
 import { SubtablesComponent } from './tables/subtables/subtables.component';
 
-import { TablesDashboard2Component } from './tables-dashboard2/tables-dashboard2.component';
+import { TablesDashboard2Component } from './tables/tables-dashboard/tables-dashboard.component';
 import { ImagedirectionsComponent } from './tables/imagedirections/imagedirections.component';
 import { ImagenotesComponent } from './tables/imagenotes/imagenotes.component';
 const routes: Routes = [
@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'imagedirections', component:ImagedirectionsComponent},
   {path:'imagenotes', component:ImagenotesComponent},
   {path:'', component:TablesComponent},
-  {path: 'table/tables-dashboard2', component: TablesDashboard2Component},
+  {path: 'table/tables-dashboard', component: TablesDashboard2Component},
 ];
 
 @NgModule({
